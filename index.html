@@ -2,8 +2,12 @@
 <html>
 <head>
 <title>Bala</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Theme CSS -->
+  <link href="freelancer.css" rel="stylesheet">
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="utf-8">
 <meta name="description" content="">
@@ -17,43 +21,64 @@
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href=“https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css“>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<!-- <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="#home" class="w3-bar-item w3-button"><b>Home</b></a>
+    <a href="#home" class="w3-bar-item w3-button"><b>Home</b></a> -->
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
+    <!-- <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#skills" class="w3-bar-item w3-button">Skills</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
-</div>
+</div> -->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+ <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bala</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#skills">Skills</a>
+        </li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1800px" id="home">
- <img class="image" src="https://images.pexels.com/photos/916335/pexels-photo-916335.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" alt="codeimage" width="100%" height="30%">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <section class="hero">
-       <div class="hero-content-area">
-          <h1>BALA NEKKANTI</h1>
-          <h3>FUll-Stack Developer</h3>
+<div class="jumbotron">
+  <section class="hero">
+       <div class="hero-content-area dark">
+          <h1 class="dark">BALA NEKKANTI</h1>
+          <h3 class="dark">FUll-Stack Developer</h3>
        </div>
 
       <div class="typewriter" style="color: white">
-        <h2>React, JavaScript, Node/Express</h2>
+        <h2 class="dark">React, JavaScript, Node/Express</h2>
       </div>
     </section>
-  </div>
-
-
-</header>
+  <div class="img"></div>
+</div>
 <!-- Page content -->
 <!-- <div class="w3-content w3-padding" style="max-width:1564px"> -->
 
@@ -137,76 +162,74 @@
     <div class="w3-container w3-padding-32" id="skills">
     <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Skills</h1>
     </div>
-  <div class="row">
-       <div class="overlay">
+    
+    <div class="row">
+      <div class="overlay">
            <img class="logos" src="images/reactjs.png" alt="html">
                <h3>React</h3>
 
         </div>
-
+      <div class="overlay col-md-3">
+            <img class="logos" src="images/nodejs.png" alt="html">
+                 <h3>NodeJs</h3>
+      </div>
       <div class="overlay">
 
          <img class="logos" src="images/javascript.png" alt="html">
          <h3>Javascript</h3>
       </div>
-
-         <div class="overlay">
-            <img class="logos" src="images/nodejs.png" alt="html">
-                 <h3>NodeJs</h3>
-         </div>
-
-         <div class="overlay">
+      <div class="overlay">
              <img class="logos" src="images/express.png" alt="html">
                 <h3>Express</h3>
           </div>
-          <div class="overlay">
+      <div class="overlay">
              <img class="logos" src="images/mongo.png" alt="html">
                 <h3>Mongo DB</h3>
           </div>
-          <div class="overlay">
+      
+    </div>
+
+    <div class="row">
+      <div class="overlay">
              <img class="logos" src="images/firebase2.png" alt="html">
                 <h3>Fire Base</h3>
           </div>
-
-  </div>
-
-
-      <div class="row">
-         <div class="overlay">
+      <div class="overlay">
             <img class="logos" src="images/html.png" alt="html">
                <h3>HTML</h3>
           </div>
-          <div class="overlay">
+      <div class="overlay">
              <img class="logos" src="images/css.png" alt="html">
                 <h3>CSS</h3>
           </div>
-
-        <div class="overlay">
+      <div class="overlay">
         <img class="logos" src="images/github.png" alt="html">
          <h3>Github</h3>
 
         </div>
-        <div class="overlay">
+      <div class="overlay">
          <img class="logos" src="images/jquery.png" alt="html">
             <h3>Jquery</h3>
         </div>
+      
+    </div>
 
-         <div class="overlay">
-        <img class="logos" src="images/bootstrap.png" alt="html">
-            <h3>Bootstrap</h3>
+    
+    
 
-        </div>
-        <div class="overlay">
-        <img class="logos" src="images/handlebars.png" alt="html">
-            <h3>Handlebars</h3>
 
-        </div>
 
-</div>
+
+
+
+
+
+
+  
 
 <div class="w3-container w3-padding-32" id="about">
          <div class="imagebox">
-            <img src="images/bala.jpg" alt="" class="img-responsive">
+            <!-- <img src="images/bala.jpg" alt="" class="img-responsive"> -->
             <div class=allabout>
                 <h1 class="profileimg">About Me</h1>
                 <p class="lead">I am a Web Developer. I am currently attending Coding BootCamp until March 17th 2018. I have a Bachelors in Computer Science. I have been living in kansas city for the last 2 years and happy to call it home 
@@ -226,16 +249,16 @@
     <h1 class="contact-info">CONTACT</h1><br><br><br>
     <!-- <div class="row"> -->
       <!-- team member 1 -->
-      <div class="col-md-4 col-sm-8 personal">
-        <div class="person">
-          <div class="person-content">
+      <div class="personal row">
+        <div class="person col-md-12">
+          <center><div class="person-content">
             <h3 class="contact-name">Bala Naga Sireesha Nekkanti</h3>
             <h3 class="role">Full-Stack Developer</h3>
             <h4 class="coninfo">nbnsireesha@gmail.com</br>
             <h4 class="cinfo">8168253192</br>
                Kansas City, Mo
             </h4>
-          </div>
+          </div></center>
           <ul class="social-icons clearfix">
             <li><a target="_blank" href="https://github.com/nbnsireesha"><span class="fa fa-github fa-2x"></span></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/bala-naga-sireesha-nekkanti/"><span class="fa fa-linkedin fa-2x"></span></a></li>
@@ -255,6 +278,8 @@
 <script src="js/retina.min.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/main.js"></script>
+<!-- Theme JavaScript -->
+<script src="js/freelancer.js"></script>
 
 </body>
 </html>
