@@ -92,6 +92,10 @@ margin:0 10px;
 .fa{
   color: black;
 }
+.allabout{
+  padding-left: 20%;
+
+}
 
 #contact{
   color:#337ab7;
@@ -161,7 +165,9 @@ font-family: 'Fascinate Inline', cursive;
   font-family:'Lobster Two', cursive;
   color:red;
 }
-
+.headingSkills{
+  font-size: 12px;
+}
 .img-responsive{
   width:38%;
   flex:left;
@@ -172,7 +178,7 @@ font-family: 'Fascinate Inline', cursive;
   font-size:18px;
   width:55%;
   /*flex:left;*/
-  padding-left:5%;
+  margin-left: 13%;
 }
 .imagebox{
   display:flex;
@@ -236,7 +242,7 @@ font-family: 'Fascinate Inline', cursive;
     margin: 0;
   }
 }
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .w3-row-padding {
     padding: 5%;
   }
@@ -271,7 +277,7 @@ margin:0 auto;
 display: block;
 width:50%;
   }
-}
+} */
 .typewriter h2 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
