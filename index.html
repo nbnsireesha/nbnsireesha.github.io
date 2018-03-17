@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <!-- Navbar (sit on top) -->
 <!-- <div class="w3-top">
@@ -42,7 +42,7 @@
     </div>
   </div>
 </div> -->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
 <div class="container-fluid">
  <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,7 +70,7 @@
   <section class="hero">
        <div class="hero-content-area dark">
           <h1 class="dark">BALA NEKKANTI</h1>
-          <h3 class="dark">FUll-Stack Developer</h3>
+          <h3 class="dark">FUll-Stack Web Developer</h3>
        </div>
 
       <div class="typewriter" style="color: white">
@@ -227,10 +227,9 @@
 
   
 
-<div class="w3-container w3-padding-32" id="about">
-         <div class="imagebox">
-            <!-- <img src="images/bala.jpg" alt="" class="img-responsive"> -->
-            <div class=allabout>
+<div class="w3-container w3-padding-32 row" id="about">
+            <div class="col-lg-3"></div>
+            <div class="allabout col-lg-6  text-justify ">
                 <h1 class="profileimg">About Me</h1>
                 <p class="lead">I am a Web Developer. I am currently attending Coding BootCamp until March 17th 2018. I have a Bachelors in Computer Science. I have been living in kansas city for the last 2 years and happy to call it home 
                 </p>
@@ -239,17 +238,60 @@
                 <p>In addition to full stack web development skills, I have programming experience in Java, MySQL server side programming. Please check out some of my projects in the portfolio section below. I look forward to continuously adding projects as they are completed, so please be sure to come back in the future to see how my portfolio progresses!
                 </p>
            </div>
-         </div>
+           <div class="col-lg-3"></div>
+  </div>
+
+
+<!-- Contact Section -->
+<div id = "contact">
+    <div class="row">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-9">
+        <h3 class="contact-name">Bala Naga Sireesha Nekkanti</h3>
+        <h3 class="role">Full-Stack Developer</h3><br/>
+        <h4 class="">nbnsireesha@gmail.com</h4></br>
+        <h4 class="">8168253192</h4></br>
+        <h4 class="cinfo">Kansas City, Mo</h4></br>
+        <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/bala-naga-sireesha-nekkanti/" target="_blank">
+                <i class="fa fa-linkedin fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/nbnsireesha" target="_blank">
+                <i class="fa fa-github fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://docs.google.com/document/d/1BXLUXI7nBDwTLS3nPU0GvYpUIgof-efHa1o-bOeQ-7s/edit?usp=sharing">
+                <i class="fa fa-file-text-o fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+
+      </div>
+      <div class="col-lg-3">
+
       </div>
 
+    </div>
+    
+
+</div>
+
+
+
+
+
   <!-- Contact Section -->
-<div class="w3-container w3-padding-32" id="contact">
+<!-- <div class="w3-container w3-padding-32" id="contact">
 <section id="teams" class="section teams">
     <div class="container">
     <h1 class="contact-info">CONTACT</h1><br><br><br>
     <!-- <div class="row"> -->
       <!-- team member 1 -->
-      <div class="personal row">
+      <!-- <div class="personal row">
         <div class="person col-md-12">
           <center><div class="person-content">
             <h3 class="contact-name">Bala Naga Sireesha Nekkanti</h3>
@@ -265,12 +307,12 @@
             <li><a target="_blank" href="https://docs.google.com/document/d/1BXLUXI7nBDwTLS3nPU0GvYpUIgof-efHa1o-bOeQ-7s/edit?usp=sharing"><span class="fa fa-file-text-o fa-2x"></span></a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <!-- team member 1 -->
-    </div>
+    <!-- </div>
   </div>
 </section>
-</div>
+</div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
@@ -280,6 +322,7 @@
 <script src="js/main.js"></script>
 <!-- Theme JavaScript -->
 <script src="js/freelancer.js"></script>
+
 
 </body>
 </html>
