@@ -13,6 +13,9 @@
     transition: all .3s ease;
 
 }
+body{
+  font-size: 7px;
+}
 #contact{
   padding-left: 20%;
 }
@@ -94,8 +97,10 @@ margin:0 10px;
 }
 .allabout{
   padding-left: 20%;
+  font-size: 7px;
 
 }
+
 
 #contact{
   color:#337ab7;
@@ -175,10 +180,10 @@ font-family: 'Fascinate Inline', cursive;
   height: 500px;
 }
 .allabout{
-  font-size:18px;
+  font-size:1px;
   width:55%;
   /*flex:left;*/
-  margin-left: 13%;
+  margin-left: 10%;
 }
 .imagebox{
   display:flex;
