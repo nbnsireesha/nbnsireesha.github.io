@@ -1,260 +1,467 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bala</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href=“https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css“>
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <meta name="referrer" content="origin">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Affordable and professional web design">
+  <meta name="keywords" content="web design, affordable web design, professional web design">
+  <meta name="author" content="Bala">
+  <title>Bala Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <!-- animations -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- form css -->
+  <link rel="stylesheet" type="text/css" href="./css/form.css">
 
 </head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="#home" class="w3-bar-item w3-button"><b>Home</b></a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#skills" class="w3-bar-item w3-button">Skills</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  <!-- nav bar area -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+      <div class="container-fluid">
+       <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#"><span id="brandName">Bala</span> Nekkanti</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#about">About</a></li>
+              <li class="dropdown">
+                <a href="#skills">Skills</a>
+              </li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contactinfo">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-</div>
+  </header> 
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1800px" id="home">
- <img class="image" src="https://images.pexels.com/photos/916335/pexels-photo-916335.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb" alt="codeimage" width="100%" height="30%">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <section class="hero">
-       <div class="hero-content-area">
-          <h1>BALA NEKKANTI</h1>
-          <h3>FUll-Stack Developer</h3>
-       </div>
+  <!-- jumbotron -->
+    <!-- <div class="jumbotron container-fluid">
+      <section class="hero row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
 
-      <div class="typewriter" style="color: white">
-        <h2>React, JavaScript, Node/Express</h2>
+          <div class="w3-container w3-center w3-animate-top">
+            <h2 >BALA NEKKANTI</h2>
+            <h3 >FUll-Stack Web Developer</h3>
+          </div>
+
+          <div class="typewriter text-center">
+            <h2 class="headingSkills text-center">React, JavaScript, Node/Express</h2>
+          </div>
+          
+        </div>
+        <div class="col-md-3"></div>
+      </section>
+      <div class="img"></div>
+    </div>   -->
+
+    <!-- header -->
+    <header id="showcase">
+      <div class="w3-container w3-center w3-animate-top">
+            <h1 class="head" >BALA NEKKANTI</h2>
+            <h2 class="head" >FUll-Stack Web Developer</h3>
+      </div>
+      <div class="typewriter text-center">
+            <h2 class="headingSkills text-center">React, JavaScript, Node/Express</h2>
+      </div>
+      <a href="#about" class="button">Read More</a>
+    </header>
+
+
+    <!-- skills -->
+
+    <!-- <div class="row container-fluid">
+      <div class="col-md-12">
+        <h2 class="text-center heading">skills</h2>   
+      </div>   
+    </div> -->
+
+    <section id="skills" data-section="skills">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Skills</h2>
+                    <!-- <hr class="star-primary"> -->
+                    <hr class="star-light"> 
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img style="margin-top: 20%;" src="images/skills/node.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+
+
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/html.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/css.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/javascript2.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/jQuery2.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+            <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/github.png" class="img-responsive" alt=""></center>
+                      </div>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/bootstrap2.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/materialize.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/heroku2.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/mysql2.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/mongo.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/firebase2.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+          
+          </div>
+
+          <div class="row">
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/react.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img style="margin-top: 35%" src="images/skills/express2.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/handlebars.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/passport.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img style="margin-top: 30%;" src="images/skills/mongoose.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/sequelize.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div> 
+
+          </div>
+
+          <div class="row">
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/terminal.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <!-- <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/amazon-s3.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div> -->
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/java.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div>
+
+              <!-- <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img style="margin-top: 35%" src="images/skills/spring.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div> -->
+
+              <!-- <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/python.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div> -->
+
+              <div class="col-sm-2 col-xs-4 portfolio-item">
+                      <div class="caption-content">
+                          <center id=""><img src="images/skills/twilio.png" class="img-responsive" alt=""></center>
+                      </div>
+              </div> 
+        
+          </div>
+      </section>
+
+
+
+    <br /><br />
+
+
+
+    <!-- About Me -->
+
+     <section id="about">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2>About Me</h2>
+              <!-- <hr class="star-light">  -->
+              <br><br><br>
+          </div>
+      </div>
+
+      <div>
+          <p class="aboutP">I am a Full Stack Web Developer. I Graduated from KU Coding BootCamp in March 2018. I have a Bachelors in Computer Science. I have been living in kansas city for the last 2 years and happy to call it home </p>
+          <p class="aboutP">The specific software development skills in my toolbelt include: JavaScript, jQuery, NodeJS, Express, ReactJS, HTML5/CSS3, Bootstrap, Git, Responsive Design, API/JSON, RESTful API, Firebase, MySQL, MongoDB, AJAX, and Database Modeling.</p>
+          <p class="aboutP">In addition to full stack web development skills, I have programming experience in Java, MySQL server side programming. Please check out some of my projects in the portfolio section below. I look forward to continuously adding projects as they are completed, so please be sure to come back in the future to see how my portfolio progresses!</p>
+      </div>
+          <br>
+            <h3 style="text-align:center;">See what I've been coding</h3>
+            <div class="social_links">
+              <h1>
+              <a target="_blank" href="https://github.com/nbnsireesha"><i class="fa fa-github aboutMeGithub">  </i></a></h1>
+            </div>
+        </div>
+
       </div>
     </section>
-  </div>
-
-
-</header>
-<!-- Page content -->
-<!-- <div class="w3-content w3-padding" style="max-width:1564px"> -->
-
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h1>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <!-- <div class="w3-display-topleft w3-black w3-padding">Business Card Exchange</div><br><br> -->
-        <img src="images/hangman.png" alt="House" style="width:100%"><br><br>
-        <h5><a target="_blank" href="https://github.com/nbnsireesha/Hangman-Game">Hangman Game</a></h5>
-        <p>A game of Hangman built using vanilla JavaScript (no jQuery), and Bootstrap 3 with minimal CSS </p>
-        <p>Technologies Used:<strong> HTML,CSS,Javascript,Bootstrap</strong></p>
-        <a target="_blank" href="https://github.com/nbnsireesha/Hangman-Game">See the code</a>
-      </div>
-    </div>
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <!-- <div class="w3-display-topleft w3-black w3-padding">PhoneBok App</div> -->
-        <img src="images/burger.png" alt="Phone" style="width:100%"><br><br><br><br><br>
-  <h5><a target="_blank" href="https://github.com/nbnsireesha/burger">Burger App</a></h5>
-  <p>In this app wherecustomers can add burgers and can be Devourit and move it to the other section </p>
-  <p>Technologies Used:<strong>MySQL, Handlebars, HTML, CSS, Sequelize</strong></p><br>
-  <a target="_blank" href="https://github.com/nbnsireesha/burger">See the code</a>
-
-      </div>
-    </div>
-
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="images/news.png" alt="pizza" style="width:100%"><br><br><br><br>
-          <h5><a target="_blank" href="https://fast-earth-99434.herokuapp.com/articles">News Scraper App</a></h5>
-        <p>In this app NEW YORK TIMES website is scraped and displays the top news where user can save the articles and comment on the articles.</p>
-        <p>Technologies Used: <strong>HTML,CSS,Javascript,Node/Express,PostgresSQL</strong></p>
-          <a target="_blank" href="https://github.com/nbnsireesha/news-scrape">See the code</a>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="w3-row-padding">
-      <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-      <img src="images/starwars.png" alt="atm" style="width:100%"><br><br><br><br><br>
-    <h5><a target="_blank" href="https://github.com/nbnsireesha/week-4-game">StarWars Game</a></h5>
-    <p>When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game..</p><br><br>
-    <a target="_blank" href="https://github.com/nbnsireesha/week-4-game">See the code</a>
-      </div>
-    </div>
-
-   <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="images/quizard.png" alt="tweed" style="width:100%"><br><br><br>
-          <h5><a target="_blank" href="https://quizard-of-ahhhs.herokuapp.com/">Quizard of Ahhhs..</a></h5>
-        <p>Its an online Trivya game</p>
-          <a target="_blank" href="https://github.com/arifkhan36/tweeder-app">See the code</a>
-      </div>
-    </div>
-
-    <div class="w3-col l4 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-      <img src="images/amazon.png" alt="weather" style="width:100%">
-    <h5><a target="_blank" href="https://github.com/nbnsireesha/Amazon-like-storefront">Amazon Like Store Front</a></h5>
-    <p>This app lets a customer browse products, choose a product, and order a specific quantity. If the quantity requested is larger than the inventory, the order fails</p>
-    <p>Technologies Used:<strong>Html, Css, MySQL, NodeJS </strong></p>
-    <a target="_blank" href="https://github.com/nbnsireesha/Amazon-like-storefront">See the code</a>
-    </div>
-    </div>
-</div>
 
 
 
-  <!-- About Section -->
 
-    <!-- need this line for about -->
+    <!-- projects -->
+      <section id="projects">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <!-- <hr class="star-primary"> -->
+                    <hr class="star-light"> 
+                </div>
+            </div>
 
-    <div class="w3-container w3-padding-32" id="skills">
-    <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Skills</h1>
-    </div>
-  <div class="row">
-       <div class="overlay">
-           <img class="logos" src="images/reactjs.png" alt="html">
-               <h3>React</h3>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <center>
+                      <p>
+                        Please click on each project to learn more! Projects are listed in chronogical order.
+                      </p>
+                    </center> 
+                </div>
 
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                  <img src="images/quizard.png" alt="tweed" style="width:100%"><br>
+                  <h5><a target="_blank" href="https://quizard-of-ahhhs.herokuapp.com/">Quizard of Ahhhs..</a></h5>
+                  <p>Its an online Trivya game</p>
+                  <a target="_blank" href="https://github.com/arifkhan36/tweeder-app">See the code</a>
+                            
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/amazon.png" alt="weather" style="width:100%">
+                    <h5><a target="_blank" href="https://github.com/nbnsireesha/Amazon-like-storefront">Amazon Like Store Front</a></h5>
+                    <p>This app lets a customer browse products, choose a product, and order a specific quantity. If the quantity requested is larger than the inventory, the order fails</p>
+                    <p>Technologies Used:<strong>Html, Css, MySQL, NodeJS </strong></p>
+                    <a target="_blank" href="https://github.com/nbnsireesha/Amazon-like-storefront">See the code</a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/starwars.png" alt="atm" style="width:100%"><br>
+                    <h5><a target="_blank" href="https://starwarsrpgcharecters.herokuapp.com/index.html">StarWars Game</a></h5>
+                    <p>When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game..</p><br><br>
+                    <a target="_blank" href="https://github.com/nbnsireesha/week-4-game">See the code</a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/hangman.png" alt="House" style="width:100%"><br>
+                  <h5><a target="_blank" href="https://nbnsireesha-hangman.herokuapp.com">Hangman Game</a></h5>
+                  <p>A game of Hangman built using vanilla JavaScript (no jQuery), and Bootstrap 3 with minimal CSS </p>
+                  <p>Technologies Used:<strong> HTML,CSS,Javascript,Bootstrap</strong></p>
+                  <a target="_blank" href="https://github.com/nbnsireesha/Hangman-Game">See the code</a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/news.png" alt="pizza" style="width:100%"><br>
+                    <h5><a target="_blank" href="https://fast-earth-99434.herokuapp.com/articles">News Scraper App</a></h5>
+                    <p>In this app NEW YORK TIMES website is scraped and displays the top news where user can save the articles and comment on the articles.</p>
+                    <p>Technologies Used: <strong>HTML,CSS,Javascript,Node/Express,PostgresSQL</strong></p>
+                    <a target="_blank" href="https://github.com/nbnsireesha/news-scrape">See the code</a>
+                </div>
+
+                <!-- <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/friendFinder.png" alt="pizza" style="width:100%"><br>
+                    <h5><a target="_blank" href="https://afternoon-crag-23424.herokuapp.com/">News Scraper App</a></h5>
+                    <p>In this app Friend Finder app, you can fill the survey and find the best matched friend</p>
+                    <p>Technologies Used: <strong>HTML, CSS, Javascript, Node/Express, MySQL</strong></p>
+                    <a target="_blank" href="https://github.com/nbnsireesha/FriendFinder-1">See the code</a>
+                </div> -->
+
+                <div class="col-sm-4 portfolio-item">
+                    
+                    <img src="images/potluck.png" alt="pizza" style="width:100%"><br>
+                    <h5><a target="_blank" href="https://rocky-taiga-71900.herokuapp.com">Pyluck Peers App</a></h5>
+                    <p>In this PotLuck Peers app you can organize events and potlucks can be scheduled, invitees and menu can be optimized </p>
+                    <p>Technologies Used: <strong>HTML, CSS, Javascript, Node/Express, MySQL</strong></p>
+                    <a target="_blank" href="https://github.com/jilljurgens/project2">See the code</a>
+                </div>
+                
+            </div>
         </div>
+    </section>
 
-      <div class="overlay">
 
-         <img class="logos" src="images/javascript.png" alt="html">
-         <h3>Javascript</h3>
+
+
+    <!--Contact Page-->
+
+    <!-- <section id="contact">
+      <div class="container">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-light"> 
+                </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <form action="https://formspree.io/nbnsireesha@gmail.com" method="POST">
+                <div class="form-group">
+                  <label for="inputName"></label>
+                  <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Enter Name" name="name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1"></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto">
+                </div>
+                <div class="form-group">
+                  <label for="inputSubject"></label>
+                  <input type="text" class="form-control" id="inputSubject" placeholder="Subject" name="subject">
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage"></label>
+                  <input type="text" class="form-control" id="inputMessage" placeholder="Message" name="message">
+                </div>
+                <button type="submit" value="send" class="btn">Submit</button>
+            </form>
+            
+          </div>
+          <div class="col-md-3"></div>
+          
+        </div>
+        
       </div>
+      
+    </section> -->
 
-         <div class="overlay">
-            <img class="logos" src="images/nodejs.png" alt="html">
-                 <h3>NodeJs</h3>
-         </div>
-
-         <div class="overlay">
-             <img class="logos" src="images/express.png" alt="html">
-                <h3>Express</h3>
-          </div>
-          <div class="overlay">
-             <img class="logos" src="images/mongo.png" alt="html">
-                <h3>Mongo DB</h3>
-          </div>
-          <div class="overlay">
-             <img class="logos" src="images/firebase2.png" alt="html">
-                <h3>Fire Base</h3>
-          </div>
-
-  </div>
+      
 
 
-      <div class="row">
-         <div class="overlay">
-            <img class="logos" src="images/html.png" alt="html">
-               <h3>HTML</h3>
-          </div>
-          <div class="overlay">
-             <img class="logos" src="images/css.png" alt="html">
-                <h3>CSS</h3>
-          </div>
 
-        <div class="overlay">
-        <img class="logos" src="images/github.png" alt="html">
-         <h3>Github</h3>
 
-        </div>
-        <div class="overlay">
-         <img class="logos" src="images/jquery.png" alt="html">
-            <h3>Jquery</h3>
-        </div>
+    <!-- footer -->
 
-         <div class="overlay">
-        <img class="logos" src="images/bootstrap.png" alt="html">
-            <h3>Bootstrap</h3>
-
-        </div>
-        <div class="overlay">
-        <img class="logos" src="images/handlebars.png" alt="html">
-            <h3>Handlebars</h3>
-
-        </div>
-
-</div>
-
-<div class="w3-container w3-padding-32" id="about">
-         <div class="imagebox">
-            <img src="images/bala.jpg" alt="" class="img-responsive">
-            <div class=allabout>
-                <h1 class="profileimg">About Me</h1>
-                <p class="lead">I am a Web Developer. I am currently attending Coding BootCamp until March 17th 2018. I have a Bachelors in Computer Science. I have been living in kansas city for the last 2 years and happy to call it home 
-                </p>
-                <p>The specific software development skills in my toolbelt include: JavaScript, jQuery, NodeJS, Express, ReactJS, HTML5/CSS3, Bootstrap, Git, Responsive Design, API/JSON, RESTful API, Firebase, MySQL, MongoDB, AJAX, and Database Modeling.
-                </p>
-                <p>In addition to full stack web development skills, I have programming experience in Java, MySQL server side programming. Please check out some of my projects in the portfolio section below. I look forward to continuously adding projects as they are completed, so please be sure to come back in the future to see how my portfolio progresses!
-                </p>
-           </div>
-         </div>
-      </div>
-
-  <!-- Contact Section -->
-<div class="w3-container w3-padding-32" id="contact">
-<section id="teams" class="section teams">
-    <div class="container">
-    <h1 class="contact-info">CONTACT</h1><br><br><br>
-    <!-- <div class="row"> -->
-      <!-- team member 1 -->
-      <div class="col-md-4 col-sm-8 personal">
-        <div class="person">
-          <div class="person-content">
-            <h3 class="contact-name">Bala Naga Sireesha Nekkanti</h3>
-            <h3 class="role">Full-Stack Developer</h3>
-            <h4 class="coninfo">nbnsireesha@gmail.com</br>
-            <h4 class="cinfo">8168253192</br>
-               Kansas City, Mo
-            </h4>
-          </div>
-          <ul class="social-icons clearfix">
-            <li><a target="_blank" href="https://github.com/nbnsireesha"><span class="fa fa-github fa-2x"></span></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/bala-naga-sireesha-nekkanti/"><span class="fa fa-linkedin fa-2x"></span></a></li>
-            <li><a target="_blank" href="https://drive.google.com/file/d/1Sfq2ePFMZuJmkiW10kMolpzyexUwLoln/view?usp=sharing"><span class="fa fa-file-text-o fa-2x"></span></a></li>
-          </ul>
+    <nav id="contactinfo" class="navBottom navbar navbar-inverse navbar-bottom" role="navigation">
+      <div class="container nav">
+        <div class="social_links">
+          <h1>
+            <a target="_blank" href="https://github.com/nbnsireesha"><i class="fa fa-github">  </i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/bala-naga-sireesha-nekkanti/">  <i class="fa fa-linkedin-square"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/8514142/sireesha">  <i class="fa fa-stack-overflow"></i></a>
+            <a target="_blank" href="https://drive.google.com/file/d/1Sfq2ePFMZuJmkiW10kMolpzyexUwLoln/view?usp=sharing">  <i class="fa fa-file"></i></a>
+          </h1>
+          <p class="lead"><a href="mailto:nbnsireesha@gmail.com">nbnsireesha@gmail.com</a></p>
+          <p class="m-0 text-center text-white">Copyright &copy; Bala 2018</p>
         </div>
       </div>
-      <!-- team member 1 -->
-    </div>
-  </div>
-</section>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/retina.min.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="js/main.js"></script>
+    </nav>
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
